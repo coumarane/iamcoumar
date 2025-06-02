@@ -1,0 +1,33 @@
+# Hugo output directory (generated site)
+public/
+
+# Hugo cache
+resources/_gen/
+assets/jsconfig.json
+
+# Node.js dependencies (if you're using Tailwind or similar)
+node_modules/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.swp
+*.swo
+
+# Deployment-related
+deploy.sh
+netlify.toml
+firebase.json
+.vercel/
+.env
+.env.*

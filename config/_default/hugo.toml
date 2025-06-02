@@ -1,0 +1,28 @@
+# set `baseurl` to your root domain
+# if you set it to "/" share icons won't work properly on production
+baseurl = "https://iamcoumar.com/" # Include trailing slash
+# title = "Clarity"  # Edit directly from config/_default/languages.toml # alternatively, uncomment this and remove `title` entry from the aforemention file.
+copyright = "Copyright © 2024–2025, Coumarane COUPPANE; all rights reserved."
+# canonifyurls = true
+
+theme = "hugo-clarity"
+disqusShortname = ""
+
+defaultContentLanguage = "en"
+
+# [languages]
+# config/_default/languages.toml
+
+# [menus]
+# config/_default/menus/menu.en.toml
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[pagination]
+pagerSize = 5

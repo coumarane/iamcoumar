@@ -1,0 +1,12 @@
+baseURL = "https://iamcoumar.com/"
+languageCode = "en-us"
+title = "iamcoumar"
+theme = ["hugo-clarity"]
+
+[params]
+  subtitle = 'The Best Widgets on Earth'
+  [params.contact]
+    email = 'info@example.org'
+    phone = '+1 202-555-1212'
+
+

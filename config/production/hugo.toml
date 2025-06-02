@@ -1,0 +1,6 @@
+[params]
+  foo = 'bar'
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-PPPPP'

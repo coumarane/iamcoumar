@@ -1,0 +1,64 @@
+[[main]]
+  name = "Home"
+  url = ""
+  weight = -110
+
+# Submenus are done this way: parent -> identifier
+# [[main]]
+#   name = "Links"
+#   identifier = "Links"
+#   weight = -108
+# [[main]]
+#   parent = "Links"
+#   name = "LinkedIn"
+#   url = "https://www.linkedin.com/"
+# [[main]]
+#   parent = "Links"
+#   name = "X"
+#   url = "https://x.com/"
+
+[[main]]
+  name = "About Me"
+  url = "about-me/"
+  weight = -107
+
+  [[main]]
+  name = "Contact Me"
+  url = "contact-me/"
+  weight = -106
+
+# social menu links
+
+[[social]]
+  name = "github"
+  type = "social"
+  weight = 1
+  url = "https://github.com/coumarane"
+# [[social]]
+#   name = "X"
+#   weight = 2
+#   url = "https://x.com/coumarane_c"
+[[social]]
+  name = "linkedin"
+  weight = 3
+  url = "https://www.linkedin.com/in/coumarane-couppane-712a2415"
+[[social]]
+  name = "rss"
+  weight = 4
+  url = "index.xml"
+
+# other supported social links
+# name = "youtube"
+# url = "https://www.youtube.com/#"
+# name = "facebook"
+# url = "https://facebook.com/#"
+# name = "instagram"
+# url = "https://instagram.com/#"
+# name = "stackoverflow"
+# url = "https://stackoverflow.com/#"
+# name = "gitlab"
+# url = "https://gitlab.com/#"
+# name = "discord"
+# url = "https://discord.gg/#"
+# name = "bluesky"
+# url = "https://bsky.app/profile/#"
