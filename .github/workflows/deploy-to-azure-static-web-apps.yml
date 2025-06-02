@@ -24,6 +24,13 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
+
+      - name: Build Hugo site
+        run: hugo --minify --verbose
+
+      - name: List public folder (debug step)
+        run: ls -la ./public
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
