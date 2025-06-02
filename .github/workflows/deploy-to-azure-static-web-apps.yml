@@ -26,7 +26,7 @@ jobs:
           hugo-version: "latest"
 
       - name: Build Hugo site
-        run: hugo --minify --verbose
+        run: hugo --minify --logLevel debug
 
       - name: List public folder (debug step)
         run: ls -la ./public
