@@ -1,11 +1,16 @@
-
 +++
-date = '2025-06-03T12:13:29+02:00'
-draft = false
-title = 'Spring Boot + Azure Cosmos DB Demo'
+title       = "Cosmos DB + Spring Boot: Connection Pitfalls and Fixes"
+description = "Timeouts, RUs, retry/backoff, and SDK configuration that actually works."
+date        = 2025-08-08T09:30:00Z
+lastmod     = 2025-08-18T09:30:00Z
+draft       = false
+categories  = ["Azure", "Application"]
+tags        = ["cosmosdb", "spring-boot", "sdk", "retry"]
+toc         = true
+aliases     = ["/post/azure/cosmosdb-springboot/"]
 +++
 
-# Spring Boot + Azure Cosmos DB Demo
+# Spring Boot + Azure Cosmos DB
 
 This project demonstrates how to connect and interact with Azure Cosmos DB from a Spring Boot application. 
 It is bootstrapped using [Spring Initializr](https://start.spring.io/)

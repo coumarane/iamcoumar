@@ -1,8 +1,11 @@
----
-title: Contact me
-tags:
-  - contact
----
++++
+title       = "Contact me"
+description = ""
+date        = 2025-08-22T00:00:00Z
+lastmod     = 2025-08-22T00:00:00Z
+slug        = "contact-me"
+toc         = false
++++
 
 # Contact Me
 Have a question, project idea, or just want to connect? I'd love to hear from you!

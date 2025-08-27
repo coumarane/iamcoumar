@@ -1,5 +1,12 @@
 +++
-author = "Coumarane COUPPANE"
-description = "Blog Coumarane COUPPANE" # Set your site's meta tag (SEO) description here. This overrides any description set in your site configuration.
-# keywords = ["devops","cloud","terraform","bash","linux","github","pipeline"] # Set your site's meta tag (SEO) keywords here. These override any keywords set in your site configuration.
+title = "Coumarane Couppane — DevOps & Cloud"
+description = "Azure, Kubernetes, Terraform, CI/CD, Ansible, .NET, Python."
 +++
+
+Hi, I’m **Coumarane** — DevOps/Cloud engineer.  
+I write **Guides**, **Reference**, **Designs**, **Case Studies**, and **Snippets** on:
+
+- Azure, Kubernetes, Terraform, Ansible, GitHub Actions  
+- .NET, Python, CI/CD, security-by-default
+
+[About me →](/about-me/)

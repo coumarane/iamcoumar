@@ -1,7 +1,88 @@
+# Cloud
 [[main]]
-  name = "Home"
-  url = ""
-  weight = -110
+  name = "Cloud"
+  identifier = "cloud"
+  url = "/cloud/"
+  weight = 10
+[[main]]
+  parent = "cloud"
+  name   = "Azure"
+  url    = "/cloud/azure/"
+  weight = 11
+
+# k8s
+[[main]]
+  name = "Kubernetes"
+  url  = "/kubernetes/"
+  weight = 20
+
+# Platform
+[[main]]
+  name = "Platform"
+  identifier = "platform"
+  url = "/platform/"
+  weight = 30
+[[main]]
+  parent = "platform"
+  name   = "IaC"
+  url    = "/platform/iac/"
+  weight = 31
+
+[[main]]
+  parent = "platform"
+  name   = "CI/CD"
+  url    = "/platform/ci-cd/"
+  weight = 32
+
+[[main]]
+  parent = "platform"
+  name   = "Ansible"
+  url    = "/platform/ansible/"
+  weight = 33
+
+[[main]]
+  parent = "platform"
+  name   = "DevOps"
+  url    = "/platform/devops/"
+  weight = 34
+
+# Programming
+[[main]]
+  name = "Programming"
+  identifier = "programming"
+  url    = "/programming/"
+  weight = 40
+[[main]]
+  parent = "programming"
+  name   = "Python"
+  url    = "/programming/python/"
+  weight = 41
+
+[[main]]
+  parent = "programming"
+  name   = ".NET"
+  url    = "/programming/dotnet/"
+  weight = 42
+
+[[main]]
+  parent = "programming"
+  name   = "Bash"
+  url    = "/programming/bash/"
+  weight = 44
+
+# Security
+[[main]]
+  name = "Security"
+  url  = "/security/"
+  weight = 50
+
+# Linux
+[[main]]
+  name = "Linux"
+  url  = "/linux/"
+  weight = 60
+
+
 
 # Submenus are done this way: parent -> identifier
 # [[main]]
@@ -19,13 +100,13 @@
 
 [[main]]
   name = "About Me"
-  url = "about-me/"
-  weight = -107
+  url  = "/about-me/"
+  weight = 100
 
-  [[main]]
+[[main]]
   name = "Contact Me"
-  url = "contact-me/"
-  weight = -106
+  url  = "/contact-me/"
+  weight = 110
 
 # social menu links
 

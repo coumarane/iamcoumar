@@ -4,6 +4,7 @@ baseurl = "https://iamcoumar.com/" # Include trailing slash
 # title = "Clarity"  # Edit directly from config/_default/languages.toml # alternatively, uncomment this and remove `title` entry from the aforemention file.
 copyright = "Copyright © 2024–2025, Coumarane COUPPANE; all rights reserved."
 # canonifyurls = true
+enableRobotsTXT = true
 
 theme = "hugo-clarity"
 disqusShortname = ""
@@ -21,8 +22,32 @@ category = "categories"
 tag = "tags"
 series = "series"
 
+[permalinks]
+  azure      = "/azure/:slug/"
+  kubernetes = "/kubernetes/:slug/"
+  iac        = "/iac/:slug/"
+  ci-cd      = "/ci-cd/:slug/"
+  ansible    = "/ansible/:slug/"
+  programming= "/programming/:slug/"
+  security   = "/security/:slug/"
+  devops     = "/devops/:slug/"
+  # optional:
+  # observability = "/observability/:slug/"
+  # linux        = "/linux/:slug/"
+  # databases    = "/databases/:slug/"
+
+[markup]
+  [markup.highlight]
+    noClasses  = false
+    lineNos    = true
+    guessSyntax = false
+    codeFences = true
+
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
 [pagination]
 pagerSize = 5
+
+[params]
+customCSS = ["css/nav-fix.css"]

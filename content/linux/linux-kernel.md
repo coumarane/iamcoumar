@@ -1,7 +1,16 @@
 +++
-date = '2025-05-29T12:13:29+02:00'
-draft = false
-title = 'Linux Kernel'
+title       = "Demystifying Linux Kernel Development with Multipass"
+description = "A quick demo to show how to develop a kernel module"
+date        = 2025-05-29T11:00:00Z
+lastmod     = 2025-08-20T16:00:00Z
+draft       = false
+categories  = ["Kernel", "Linux", "Kernel Modules"]
+tags        = ["linux", "kernel"]
+toc         = true
+aliases     = [
+  "/post/ops/linux-kernel/",
+  "/other-posts/linux-kernel/"
+]
 +++
 
 🌟 Demystifying Linux Kernel Development with Multipass 🌟

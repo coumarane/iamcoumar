@@ -1,11 +1,18 @@
 +++
 title       = "{{ replace .Name "-" " " | title }}"
-description = ""
+description = "Csharp snippet, script, or best practice."
 date        = {{ .Date }}
 lastmod     = {{ .Date }}
 draft       = true
-categories  = []
+categories  = ["Programming","csharp"]
 tags        = []
 series      = []
 toc         = true
 +++
+
+## Problem
+
+## Solution
+```csharp
+# c# code here
+```

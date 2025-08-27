@@ -1,11 +1,18 @@
 +++
 title       = "{{ replace .Name "-" " " | title }}"
-description = ""
+description = "Linux how-to, tuning, or troubleshooting guide."
 date        = {{ .Date }}
 lastmod     = {{ .Date }}
 draft       = true
-categories  = []
+categories  = ["Linux"]
 tags        = []
 series      = []
 toc         = true
 +++
+
+## Goal
+
+## Commands
+```bash
+# example command
+```

@@ -12,10 +12,10 @@ keywords = ["devops", "cloud", "terraform", "bash", "linux", "github", "pipeline
 # showShare = false # Uncomment to not show share buttons on each post. Also available in each post's front matter.
 
 # Google analytics Id
-ga_analytics = ""
+ga_analytics = "G-S7L8Q3JHXJ"
 
 # Google tag manager
-google_tag_manager_id = ""
+google_tag_manager_id = "GTM-KWPVKNP5"
 
 # Baidu analytics Id
 # baidu_analytics = "XXXXXXXX"
@@ -68,7 +68,7 @@ enableMathNotation = false
 
 # directory(s) where your articles are located
 mainSections = [
-  "post",
+  "azure","kubernetes","iac","ci-cd","ansible","programming","security","devops",
 ] # see config details here https://gohugo.io/functions/where/#mainsections
 
 # Label Non inline images on an article body

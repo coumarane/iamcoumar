@@ -1,11 +1,18 @@
 +++
 title       = "{{ replace .Name "-" " " | title }}"
-description = ""
+description = "Platform guide, snippet, or best practice."
 date        = {{ .Date }}
 lastmod     = {{ .Date }}
 draft       = true
-categories  = []
+categories  = ["Platform"]
 tags        = []
 series      = []
 toc         = true
 +++
+
+## Overview
+
+## Code Example
+```
+# Example code snippet
+```

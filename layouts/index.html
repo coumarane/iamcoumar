@@ -1,0 +1,23 @@
+{{ define "main" }}
+<!-- Small, page-scoped style just for the homepage -->
+  <style>
+    .home-intro{
+      background: #f5f7fb;        /* light mode */
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+    @media (prefers-color-scheme: dark){
+      .home-intro{ background: #fafafa; }  /* dark mode */
+    }
+  </style>
+
+  <div class="grid-inverse wrap content">
+    {{ with .Content }}
+      <section class="posts home-intro">{{ . }}</section>
+    {{ end }}
+
+    <aside class="sidebar">
+      {{ partial "sidebar.html" . }}
+    </aside>
+</div>
+{{ end }}

@@ -1,8 +1,11 @@
----
-title: About me
-tags:
-  - about
----
++++
+title       = "About Me"
+description = "DevOps & Cloud Engineer — Azure, Kubernetes, Terraform, Ansible, CI/CD."
+date        = 2025-08-22T00:00:00Z
+lastmod     = 2025-08-22T00:00:00Z
+slug        = "about"
+toc         = false
++++
 
 # About Me
 👋 Hi, I'm Coumarane Couppane, a passionate and experienced DevOps Cloud Engineer with over 15 years in IT, specializing in designing and deploying robust, scalable, and secure cloud infrastructures.
@@ -26,3 +29,6 @@ Some technologies and frameworks I frequently use:
 I hold multiple Microsoft Azure certifications (Fundamentals, Developer, DevOps Engineer), and I’m always looking for exciting challenges and opportunities to innovate.
 
 When I’m not working on cloud infrastructure, I enjoy exploring new technologies, gaming, and traveling. Welcome to my blog, where I share insights, tutorials, and thoughts on tech and beyond.
+
+> Contact: [GitHub](https://github.com/coumarane) • [LinkedIn](https://www.linkedin.com/in/coumarane-couppane-712a2415/) • [Email](mailto:c.coumarane@gmail.com)
+> 

@@ -1,11 +1,18 @@
 +++
 title       = "{{ replace .Name "-" " " | title }}"
-description = ""
+description = "CI/CD pipeline or automation article."
 date        = {{ .Date }}
 lastmod     = {{ .Date }}
 draft       = true
-categories  = []
+categories  = ["CI/CD"]
 tags        = []
 series      = []
 toc         = true
 +++
+
+## Overview
+
+## Workflow File
+```yaml
+# GitHub Actions YAML snippet
+```
