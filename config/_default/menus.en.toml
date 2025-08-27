@@ -9,6 +9,11 @@
   name   = "Azure"
   url    = "/cloud/azure/"
   weight = 11
+[[main]]
+  parent = "cloud"
+  name   = "Ovh"
+  url    = "/cloud/ovh/"
+  weight = 12
 
 # k8s
 [[main]]
