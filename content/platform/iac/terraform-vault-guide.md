@@ -17,6 +17,8 @@ This guide shows how to:
 - Store secrets securely inside Vault.
 - Retrieve and use those secrets in **Terraform**.
 
+![terraform-vault-guide.png](images/terraform/terraform-vault-guide.png)
+
 ---
 
 ## Prerequisites
