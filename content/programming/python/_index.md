@@ -1,6 +1,6 @@
 +++
 title = "Python"
-description = "Pythonc code"
+description = "Python code"
 +++
 
 Python code

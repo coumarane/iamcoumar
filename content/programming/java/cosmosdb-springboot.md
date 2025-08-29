@@ -1,13 +1,13 @@
 +++
 title       = "Cosmos DB + Spring Boot: Connection Pitfalls and Fixes"
-description = "Timeouts, RUs, retry/backoff, and SDK configuration that actually works."
-date        = 2025-08-08T09:30:00Z
+description = "Avoid timeouts and RU waste when using Cosmos DB with Spring Boot. Covers retries, backoff, and the right SDK configs."
+date        = 2025-07-08T09:30:00Z
 lastmod     = 2025-08-18T09:30:00Z
 draft       = false
-categories  = ["Azure", "Application"]
-tags        = ["cosmosdb", "spring-boot", "sdk", "retry"]
+categories  = ["Programming", "Java", "Cloud"]
+tags        = ["azure", "cosmosdb", "spring-boot", "java"]
 toc         = true
-aliases     = ["/post/azure/cosmosdb-springboot/"]
+aliases     = ["/post/programming/java/cosmosdb-springboot/"]
 +++
 
 # Spring Boot + Azure Cosmos DB
@@ -16,6 +16,19 @@ This project demonstrates how to connect and interact with Azure Cosmos DB from 
 It is bootstrapped using [Spring Initializr](https://start.spring.io/)
 
 ![spring_boot_initializr.png](images/spring_boot_initializr.png)
+
+---
+
+## Why This Matters
+
+Cosmos DB is a fully managed, globally distributed database. But connecting to it from Spring Boot is not always straightforward:  
+- Misconfigured **timeouts** lead to `RequestTimeoutException`.  
+- Poor **retry/backoff policies** cause wasted **Request Units (RUs)**.  
+- Using the wrong **connection mode (Gateway vs Direct)** results in performance bottlenecks.  
+
+This guide highlights **correct setup** and shows **CRUD operations** without surprises.
+
+---
 
 ## Overview
 By using this code, you will learn how to:
@@ -34,7 +47,7 @@ By using this code, you will learn how to:
 - **Azure CLI** (`az`): Required for command-line interactions with Azure
 
 ---
-## Create Azure Cosmos DB
+## Provision Cosmos DB with Azure CLI
 
 You can create Azure Cosmos DB through the Azure Portal or by using the Azure CLI. 
 The steps below use the Azure CLI.
@@ -70,15 +83,17 @@ az cosmosdb sql database create \
 
 ---
 
-## Set Up the Application
-### 1. Clone the repository:
+## Spring Boot Setup
+### 1. Clone the repo:
 
 ```bash
 git clone https://github.com/coumarane/spring-boot-cosmosdb.git
 
 cd spring-boot-cosmosdb
 ```
-### 2. Update the application.properties file (in src/main/resources/application.properties):
+
+### 2. Application Properties:
+Update `src/main/resources/application.properties`:
 ```
 azure.cosmos.connection-string=<<PRIMARY CONNECTION STRING>>
 azure.cosmos.database=mycosmosdb

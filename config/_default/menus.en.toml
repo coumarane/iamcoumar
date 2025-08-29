@@ -68,6 +68,11 @@
   name   = ".NET"
   url    = "/programming/dotnet/"
   weight = 42
+[[main]]
+  parent = "programming"
+  name   = "Java"
+  url    = "/programming/java/"
+  weight = 43
 
 [[main]]
   parent = "programming"
