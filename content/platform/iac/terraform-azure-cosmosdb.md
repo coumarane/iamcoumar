@@ -9,3 +9,5 @@ tags        = ["iac", "terraform"]
 toc         = true
 aliases     = ["/post/plateform/iac/terraform-azure-cosmosdb/"]
 +++
+
+# Provision Azure Cosmos DB with Terraform
